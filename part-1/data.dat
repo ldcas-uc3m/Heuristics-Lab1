@@ -5,23 +5,11 @@ set STOPS:= O s1 s2 s3 F;
 set STOP_PASSENGERS:= s1 s2 s3;
 
 # parameters
-param p:=  # students on stop in STOPS
+param p:=  # students on stop in STOPS_PASSENGERS
     s1  15
     s2   5
     s3  10
 ;
-
-# param a:=  # cost of edge in EDGES
-#     x1   8
-#     x2  10
-#     x3  10
-#     x4   3
-#     x5   7
-#     x6   6
-#     x7   5
-#     x8   7
-#     x9   4
-# ;
 
 param costs: O s1 s2 s3 F:=
     O  9999    8   10   10 9999

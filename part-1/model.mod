@@ -13,7 +13,7 @@ param d;  # capacity per bus
 
 # decision variables
 var A {i in STOPS, j in STOPS} binary;
-var F {i in STOPS, j in STOPS} integer, >= 0 ;
+var F {i in STOPS, j in STOPS} integer, >= 0;
 
 # objective function
 minimize cost:
