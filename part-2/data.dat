@@ -3,6 +3,8 @@ data;
 # define the sets
 set STOPS:= O s1 s2 s3 F;
 set STOP_PASSENGERS:= s1 s2 s3;
+set STUDENTS:= h1 h2 h3 h4 h5 h6 h7 h8;
+
 
 # parameters
 param p:=  # students on stop in STOPS
@@ -11,17 +13,17 @@ param p:=  # students on stop in STOPS
     s3  10
 ;
 
-# param a:=  # cost of edge in EDGES
-#     x1   8
-#     x2  10
-#     x3  10
-#     x4   3
-#     x5   7
-#     x6   6
-#     x7   5
-#     x8   7
-#     x9   4
-# ;
+param siblings: h1 h2 h3 h4 h5 h6 h7 h8:=
+    h1 0 0 0 0 0 0 0 0
+    h2 0 0 0 0 0 0 0 0
+    h3 0 0 0 0 0 0 0 0
+    h4 0 0 0 0 1 0 0 0 
+    h5 0 0 0 1 0 0 0 0  
+    h6 0 0 0 0 0 0 0 0
+    h7 0 0 0 0 0 0 0 0
+    h8 0 0 0 0 0 0 0 0
+;
+
 
 param costs: O s1 s2 s3 F:=
     O  9999    8   10   10 9999
@@ -31,9 +33,20 @@ param costs: O s1 s2 s3 F:=
     F  9999 9999 9999 9999 9999
 ;
 
+param possible_stops: s1 s2 s3:=
+    h1 1 0 0
+    h2 1 0 0
+    h3 1 0 0
+    h4 1 1 1
+    h5 1 1 1
+    h6 0 0 1
+    h7 0 0 1
+    h8 0 0 1    
+;
+
 param b:=  120;  # cost per bus
 param c:=    5;  # cost per km
-param d:=   20;  # capacity per bus
+param d:=   4;  # capacity per bus
 
 
 end;
