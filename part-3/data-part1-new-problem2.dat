@@ -1,0 +1,29 @@
+data;
+
+# define the sets
+set STOPS:= O s1 s2 s3 s4 F;
+set STOP_PASSENGERS:= s1 s2 s3 s4;
+
+# parameters
+param p:=  # students on stop in STOPS_PASSENGERS
+    s1  15
+    s2  15
+    s3  15
+    s4  5
+;
+# Cost of route from i to j in STOPS. If there is no route then cost is 9999
+param costs: O s1 s2 s3 s4 F:=
+    O  9999    1   1   1 1 9999 
+    s1 9999 9999    3    7  9999  1 
+    s2 9999    3 9999    5    7 1
+    s3 9999    7    5 9999    4 1
+    s4 9999 9999 7 4 9999 1
+    F  9999 9999 9999 9999 9999 9999
+;
+
+param b:=  0;  # cost per bus
+param c:=    5;  # cost per km
+param d:=   20;  # capacity per bus
+
+
+end;

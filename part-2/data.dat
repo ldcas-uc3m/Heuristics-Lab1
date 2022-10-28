@@ -5,13 +5,6 @@ set STOPS:= O s1 s2 s3 F;
 set STOP_PASSENGERS:= s1 s2 s3;
 set STUDENTS:= h1 h2 h3 h4 h5 h6 h7 h8;
 
-
-# parameters
-param p:=  # students on stop in STOPS
-    s1  15
-    s2   5
-    s3  10
-;
 # If student hi is sibling of student hj then siblings(hi,hj)=1 else siblings(hi,hj)=0
 param siblings: h1 h2 h3 h4 h5 h6 h7 h8:= 
     h1 0 0 0 0 0 0 0 0
