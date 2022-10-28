@@ -10,7 +10,7 @@ param p:=  # students on stop in STOPS_PASSENGERS
     s2   5
     s3  10
 ;
-
+# Cost of route from i to j in STOPS. If there is no route then cost is 9999
 param costs: O s1 s2 s3 F:=
     O  9999    8   10   10 9999
     s1 9999 9999    3    7    6
