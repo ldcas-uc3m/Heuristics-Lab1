@@ -20,7 +20,7 @@ Any solution must comply with the following constraints:
 - All routes start from the parking and end at the school. Thus, the number of routes starting at the parking must be the same as the number of routes finishing at the school. In the example two routes exit the school and they both finish at the school.
 - The flow of students from location X to location Y (number of students going from X to Y ) cannot be greater than the bus capacity if there is a route that goes from X to Y . If there is no route between two locations, the flow of students must be zero.
 
-The school board is interested in designing the school bus routes in order to minimize the cost associated with them. Each bus used adds a cost of 120 e. Additionally, to this cost we must add the gas cost, which is 5e/km. Thus, considering the solution show in Figure 1 (red and blue routes) the total cost would be 120 × 2 + 5 × (8 + 6 + 10 + 5 + 7) = 420 e. These routes form a solution that is not necessarily optimal.  
+The school board is interested in designing the school bus routes in order to minimize the cost associated with them. Each bus used adds a cost of $120€$. Additionally, to this cost we must add the gas cost, which is 5e/km. Thus, considering the solution show in Figure 1 (red and blue routes) the total cost would be $120 × 2 + 5 × (8 + 6 + 10 + 5 + 7) = 420€$. These routes form a solution that is not necessarily optimal.  
 The find the optimal solution you must:
 1. Model the problem as a Integer Lineal Programming task ([Modelling P1](#modelling-p1)).
 2. Implement and solve the model in a spreadsheet (`part-1/exercise1lab.ods`).
@@ -41,10 +41,10 @@ Cost of edge $k$:
 $a_k\in \mathbb{N};\ k \in [1,9]\subset \mathbb{N}$  
 Cost of going from i to j:  
 $C_{ij} \in \mathbb{N}$  
-$C_{ij}= \infty $ iff there is no edge from $i$ to $j$  
+$C_{ij}= \infty$ iff there is no edge from $i$ to $j$  
 $C \in P \times P$  
-$C=
-\begin{bmatrix}
+<!--
+$C=\begin{bmatrix}
 \infty & a_1 & a_2 & a_3 & \infty \\
 \infty & \infty & a_4 & a_5 & a_6 \\
 \infty & a_4 & \infty & a_7 & a_8 \\
@@ -52,6 +52,7 @@ $C=
 \infty & \infty & \infty & \infty & \infty \\
 \end{bmatrix}
 $  
+-->
 <!-- Thanks to https://editor.codecogs.com/ -->
 Cost per bus:  
 $b\in \mathbb{N}$  
@@ -110,8 +111,9 @@ Cost of edge $k$:
 $a_k\in \mathbb{N};\ k \in [1,9]\subset \mathbb{N}$  
 Cost of going from i to j:  
 $C_{ij} \in \mathbb{N}$  
-$C_{ij}= \infty $ iff there is no edge from $i$ to $j$  
+$C_{ij}= \infty$ iff there is no edge from $i$ to $j$  
 $C \in P \times P$  
+<!--
 $C=
 \begin{bmatrix}
 \infty & a_1 & a_2 & a_3 & \infty \\
@@ -121,6 +123,7 @@ $C=
 \infty & \infty & \infty & \infty & \infty \\
 \end{bmatrix}
 $  
+-->
 <!-- Thanks to https://editor.codecogs.com/ -->
 Cost per bus:  
 $b \in \mathbb{N}$  
