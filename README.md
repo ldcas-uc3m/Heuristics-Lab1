@@ -43,16 +43,14 @@ Cost of going from i to j:
 $C_{ij} \in \mathbb{N}$  
 $C_{ij}= \infty$ iff there is no edge from $i$ to $j$  
 $C \in P \times P$  
-<!--
-$C=\begin{bmatrix}
+
+$$C=\begin{bmatrix}
 \infty & a_1 & a_2 & a_3 & \infty \\
 \infty & \infty & a_4 & a_5 & a_6 \\
 \infty & a_4 & \infty & a_7 & a_8 \\
 \infty & a_5 & a_7 & \infty & a_9 \\
 \infty & \infty & \infty & \infty & \infty \\
-\end{bmatrix}
-$  
--->
+\end{bmatrix}$$  
 <!-- Thanks to https://editor.codecogs.com/ -->
 Cost per bus:  
 $b\in \mathbb{N}$  
@@ -113,17 +111,15 @@ Cost of going from i to j:
 $C_{ij} \in \mathbb{N}$  
 $C_{ij}= \infty$ iff there is no edge from $i$ to $j$  
 $C \in P \times P$  
-<!--
-$C=
-\begin{bmatrix}
+
+$$C=\begin{bmatrix}
 \infty & a_1 & a_2 & a_3 & \infty \\
 \infty & \infty & a_4 & a_5 & a_6 \\
 \infty & a_4 & \infty & a_7 & a_8 \\
 \infty & a_5 & a_7 & \infty & a_9 \\
 \infty & \infty & \infty & \infty & \infty \\
-\end{bmatrix}
-$  
--->
+\end{bmatrix}$$  
+
 <!-- Thanks to https://editor.codecogs.com/ -->
 Cost per bus:  
 $b \in \mathbb{N}$  
